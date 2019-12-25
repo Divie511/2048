@@ -58,13 +58,6 @@ class Cell:
         if self.value in tile_colors: return tile_colors[self.value]
         else: return "#ff0000"
 
-step = {
-    'Right': [0,1],
-    'Left': [0,-1],
-    'Up': [-1,0],
-    'Down': [1,0]
-        }
-
 def select(r,c):
     if r==0:
         if c==0: return cell00
